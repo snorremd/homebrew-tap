@@ -12,6 +12,6 @@ class CloudSqlProxy < Formula
   end
 
   test do
-    system "false"
+    assert_match "cloud-sql-proxy version 2.2.0\n", shell_output("#{bin}/cloud-sql-proxy --version")
   end
 end
