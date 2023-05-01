@@ -5,6 +5,12 @@ class CloudSqlProxy < Formula
   sha256 "83c3e801d9c153af47c74686e9d900e04adcbdb685328aad194bf91b55adc17c"
   license ""
 
+  bottle do
+    root_url "https://ghcr.io/v2/snorremd/tap"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura: "c52805b068053dcc25a418f253dfd7530d1dc6d0245d1b6ae87bb31bcfcedc4e"
+  end
+
   depends_on "go" => :build
 
   def install
