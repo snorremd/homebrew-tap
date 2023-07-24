@@ -6,7 +6,9 @@ class Rustic < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "4e0f947da9989a4e8d6e57efc3c6eb076a83f3476aa6cd9b2f6071dac7b7d857"
+    root_url "https://ghcr.io/v2/snorremd/tap"
+    sha256 cellar: :any_skip_relocation, ventura:      "ba642c83b2e733b177ed6743dc49ee77b8f1d7091ba71e7e1fe4245ea52b4beb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "39115fde0803baf06a3719f973f620fe83a7d80fbba1279742f0d86103b252f0"
   end
 
   depends_on "rust" => :build
