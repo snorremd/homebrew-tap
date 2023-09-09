@@ -1,8 +1,8 @@
 class CloudSqlProxy < Formula
   desc "Utility for secure connections to your GCP SQL instances"
   homepage "https://github.com/GoogleCloudPlatform/cloud-sql-proxy"
-  url "https://github.com/GoogleCloudPlatform/cloud-sql-proxy/archive/refs/tags/v2.6.0.tar.gz"
-  sha256 "53626d199051074f4be93f8e9e4d7e390d627328c8e492c44577fe675629f245"
+  url "https://github.com/GoogleCloudPlatform/cloud-sql-proxy/archive/refs/tags/v2.6.1.tar.gz"
+  sha256 "b5c4fd1decb2d4091f0ae118e2df8387cbee7ea166047be12c4183fbeecf0c46"
   license ""
 
   bottle do
@@ -18,6 +18,6 @@ class CloudSqlProxy < Formula
   end
 
   test do
-    assert_match "cloud-sql-proxy version 2.6.0\n", shell_output("#{bin}/cloud-sql-proxy --version")
+    assert_match "cloud-sql-proxy version 2.6.1\n", shell_output("#{bin}/cloud-sql-proxy --version")
   end
 end
