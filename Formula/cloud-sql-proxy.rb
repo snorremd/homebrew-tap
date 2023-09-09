@@ -7,8 +7,8 @@ class CloudSqlProxy < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/snorremd/tap"
-    sha256 cellar: :any_skip_relocation, ventura:      "4e11326642437fd8038218c7e0550d8ad4a592517337fcda37343a811fea0dd3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e0552218dc71d89765a640e056e945bae47fb585f2fd7c5901d494211df3dd3d"
+    sha256 cellar: :any_skip_relocation, ventura:      "fa1d37ebaa79ed635caf621df3a5b5045b8126f489ad431463b2981d0c96fa9f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4b22cde04b6847a54529f831adb4029bde52b4c098189d44ef724be6b04e4d29"
   end
 
   depends_on "go" => :build
