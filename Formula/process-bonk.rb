@@ -5,6 +5,12 @@ class ProcessBonk < Formula
   sha256 "6a6bedc6b2e0b17badd068cc99c720de7aaa5492a218ead7a750469345234f38"
   license "MIT"
 
+  bottle do
+    root_url "https://ghcr.io/v2/snorremd/tap"
+    sha256 cellar: :any_skip_relocation, ventura:      "907b82f4dbae39a595fb75fe197a0792cce270329d9b97d0fb0c8280ebbe4f26"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd68dccc7bdc3aa415c5513784acd27f8dea524afe58ffafc0a57f70b45091f4"
+  end
+
   depends_on "rust" => :build
 
   def install
