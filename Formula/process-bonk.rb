@@ -12,7 +12,7 @@ class ProcessBonk < Formula
   end
 
   service do
-    run [opt_bin/"process-bonk",  "#{etc}/process-bonk/process-bonk.toml"]
+    run [opt_bin/"process-bonk", "#{etc}/process-bonk/process-bonk.toml"]
     log_path var/"log/process-bonk.log"
     error_log_path var/"log/process-bonk.log"
   end
@@ -25,14 +25,13 @@ class ProcessBonk < Formula
     <<~EOS
       The config file is located at:
       #{pkgetc}/process-bonk.toml
-      
+
       Please edit this file to suit your needs.
       E.g. to monitor a process with name "my-process"
       specify the following in the config file:
       process_name = "my-process"
     EOS
   end
-
 
   test do
     system "true"
