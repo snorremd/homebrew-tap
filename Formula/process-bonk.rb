@@ -1,6 +1,6 @@
 class ProcessBonk < Formula
   desc "BONK process, don't eat all my Mac's CPU"
-  homepage ""
+  homepage "https://github.com/snorremd/process-bonk"
   url "https://github.com/snorremd/process-bonk/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "6a6bedc6b2e0b17badd068cc99c720de7aaa5492a218ead7a750469345234f38"
   license "MIT"
