@@ -18,8 +18,13 @@ class ProcessBonk < Formula
   end
 
   def post_install
-    # Install default config file from the tap repo root
-    pkgetc.install "#{Formula["process-bonk"].tap.path}/process-bonk.toml"
+    # Create a configuration file if it doesn't exist
+    (etc/"process-bonk").mkpath
+    unless (etc/"process-bonk/process-bonk.toml").exist?
+      (etc/"process-bonk/process-bonk.toml").write <<~EOS
+        process_name = ""
+      EOS
+    end
   end
 
   def caveats
