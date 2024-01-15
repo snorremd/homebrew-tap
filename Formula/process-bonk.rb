@@ -18,7 +18,8 @@ class ProcessBonk < Formula
   end
 
   def post_install
-    pkgetc.install "process-bonk.toml"
+    # Install default config file from the tap repo root
+    pkgetc.install "#{Formula["process-bonk"].tap.path}/process-bonk.toml"
   end
 
   def caveats
