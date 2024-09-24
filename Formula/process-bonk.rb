@@ -1,7 +1,7 @@
 class ProcessBonk < Formula
   desc "BONK process, don't eat all my Mac's CPU"
   homepage "https://github.com/snorremd/process-bonk"
-  url "https://github.com/snorremd/process-bonk/archive/refs/tags/v0.1.1.tar.gz"
+  url "https://github.com/snorremd/process-bonk/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "048356323c67a99c21b6aad0fe37c547b16953213c067020f6de7c524e2add60"
   license "MIT"
 
@@ -29,6 +29,7 @@ class ProcessBonk < Formula
     unless (etc/"process-bonk/process-bonk.toml").exist?
       (etc/"process-bonk/process-bonk.toml").write <<~EOS
         process_name = ""
+        stats_path = ""
       EOS
     end
   end
@@ -42,6 +43,7 @@ class ProcessBonk < Formula
       E.g. to monitor a process with name "my-process"
       specify the following in the config file:
       process_name = "my-process"
+      stats_path = "/tmp/my-process-stats.log"
     EOS
   end
 
