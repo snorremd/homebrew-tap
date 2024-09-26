@@ -7,8 +7,8 @@ class ProcessBonk < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/snorremd/tap"
-    sha256 cellar: :any_skip_relocation, ventura:      "cd0092bc567bc030f9c3783ecbf9473a50e02aa7d956a91e94dbd2354e68255c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "30f9c226e8a9a93c43bb5bfc9a007734b72a4c32c575251654e32f577c25829b"
+    sha256 cellar: :any_skip_relocation, ventura:      "4de51d1bb281ca8c4efb90a30e8d0a0beb87b4f7865d617adb51ec36378100d1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a389e08cf033361c60b39712ff3adef5ff5025b503ebc5bd5c15106abe3f27fa"
   end
 
   depends_on "rust" => :build
